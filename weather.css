@@ -1,0 +1,140 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.weatherForm{
+    margin:20px;
+}
+.cityInput{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:10px;
+    width:300px;
+    border: 0;
+    outline:2px green;
+    color: green;
+    caret-color: green;
+}
+.cityInput::placeholder{
+    color:green;
+}
+button[type="submit"] {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: hsl(122, 39%, 50%);
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: hsl(122, 39%, 25%);
+}
+.card{
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 50px;
+    box-shadow: 2px 2px hsla(0,0%,0%,0.5);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-top:0;
+    margin-bottom: 25px;
+}
+p{
+    font-size: 1.5rem;
+    margin:5px 0;
+}
+.cityDisplay,.tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color:hsla(0, 0%, 0%, 0.85);
+    margin-bottom: 25px;
+}.humidity{
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+
+.descDisplay{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.weatherEmoji{
+    margin:0;
+    font-size: 7rem;
+}
+.errorDisplay{
+    font-size:2.5rem;
+    font-weight: bold;
+    color:hsla(0, 0%, 0%, 0.75)
+}
+@media screen and(max-width:768px) {
+    .weatherForm{
+        width:50%;
+        display: flex;
+        flex-direction: row;
+    }
+        .cityInput{
+            width:40px;
+        }
+}
+
+@media (width <= 768px) {
+    .weatherForm {
+     width: 65%;
+     display: flex;
+    
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.cityInput{
+    padding:10px;
+    width:60%;
+    font-size: large;
+}
+button[type="submit"]{
+    width: 50%;
+    font-size: large;
+}
+.card{
+    font-size: large;
+    padding:10px;
+    font-size: large;
+    min-width: 50%;
+   
+}
+.cityDisplay,
+.tempDisplay{
+    font-size: Larger;
+}
+.descDisplay{
+    font-size: 1.3rem;
+}
+
+}
+.footer{
+    text-align: center;
+    margin-top: 400px;
+    font-size: larger;
+    font-weight: bold;
+    color:green;
+}
